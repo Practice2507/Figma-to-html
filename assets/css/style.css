@@ -15,6 +15,15 @@ body {
 a {
   text-decoration: none;
 }
+.heading-lv2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+
+  font-size: 38px;
+
+  line-height: 1.27;
+  letter-spacing: -2%;
+}
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -210,7 +219,7 @@ a {
 .hero .desc-recent {
   margin-top: 48px;
 }
-.hero .stats{
+.hero .stats {
   margin-top: 8px;
 }
 .hero .stats strong {
@@ -220,6 +229,47 @@ a {
   line-height: 1.23;
   margin-right: 15px;
 }
-.hero .stats strong:nth-child(2){
+.hero .stats strong:nth-child(2) {
   margin-left: 22px;
+}
+/* ===========popular========== */
+.popular {
+  padding: 65px 0;
+
+  margin-top: 135px;
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+
+  font-weight: 400;
+  color: #5f5b53;
+  font-size: 18px;
+
+  line-height: 1.67;
+}
+.popular-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-top .controls{
+  display: flex;
+  gap: 18px;
+}
+.popular-top .controls-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.popular-top .controls-btn:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
