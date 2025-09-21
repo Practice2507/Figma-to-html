@@ -46,6 +46,18 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2{
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
+}
 /* ===================header=================== */
 .header {
   background-color: #fffcf4;
@@ -278,6 +290,7 @@ a {
   border-radius: 12px;
   background: #fff;
   border: 1px solid #e2dffa;
+  flex: 1;
 }
 .popular .course-item:hover {
   border: 1px solid transparent;
@@ -306,7 +319,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.popular .course-item .title a{
+.popular .course-item .title a {
   color: #171100;
   font-weight: 600;
 
